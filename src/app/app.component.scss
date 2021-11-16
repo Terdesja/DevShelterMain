@@ -1,0 +1,79 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.toolbarbutton {
+    border: none;
+    background-color: #1b1b1b;
+    color: rgb(14, 12, 12);
+}
+
+.toolbaricon {
+    background-color: #1b1b1b;
+    color: #ff6c54;
+}
+
+.example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+}
+.mat-tab-group {
+    margin-bottom: 48px;
+}
+
+ngb-carousel {
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+ngb-carousel img {
+    width: 100%;
+    outline: none;
+}
+
+ngb-carousel {
+    width: inherit;
+    height: inherit;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-item {
+    display: flex !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s;
+    z-index: -1;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    z-index: 20;
+}
+
+.carousel-control-next {
+    z-index: 20;
+}
+
+.carousel-indicators {
+    z-index: 20;
+}

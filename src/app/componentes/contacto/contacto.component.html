@@ -1,0 +1,87 @@
+<div style="display: flex;">
+    <div>
+       <mat-button (click)="mostrarModalInfo()"><img style="height: 300px; width: 300px; margin-left: 190px;" src="./../assets/iconos/logos/ICONOS REDES-16.png" alt="" background-color="none"></mat-button>
+       <ng-template #myModalInfo let-modal>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Estamos en Facebook</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="modal.close()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <a href="https://www.facebook.com/dev.shelter" title="Red de Facebbok">DevShelterMain</a>
+            <div class="modal-body">
+              <a>El refugio de tus ideas</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+
+
+    <div>
+       <mat-button (click)="mostrarModalWs()" ><img style="height: 300px; width: 300px; margin-left: 16px;"  src="./../assets/iconos/logos/ICONOS REDES-19.png" alt=""></mat-button>
+        <ng-template #myModalWs let-modal>
+         <div class="modal-content">
+          <div class="modal-header">
+           <h5 class="modal-title">Estamos en Whatsapp</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="modal.close()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+          <a title="Contacto de Whatsapp">Nuestro número de contacto es +58 0412-336-4839 </a>
+          <div class="modal-body">
+            <a>DevShelterMain El refugio de tus ideas</a>
+          </div>
+        </div>
+      </div>
+       </ng-template>
+    </div>
+
+
+
+
+    <div>
+        <mat-button (click)="mostrarModalGm()"><img style="height: 300px; width: 300px; " src="./../assets/iconos/logos/ICONOS REDES-29.png" alt=""></mat-button>
+        <ng-template #myModalGm let-modal>
+            <div class="modal-content">
+             <div class="modal-header">
+              <h5 class="modal-title">Correo electrónico</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="modal.close()">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+             <a title="Correo gmail">Nuestro correo devshelterstudios@gmail.com </a>
+             <div class="modal-body">
+               <a>DevShelterMain El refugio de tus ideas</a>
+             </div>
+           </div>
+         </div>
+          </ng-template>
+    </div>
+
+
+    <div>
+        <mat-button (click)="mostrarModalIg()"><img style="height: 300px; width: 300px; margin-right: 15px;" src="./../assets/iconos/logos/ICONOS REDES-17.png" alt=""></mat-button>
+        <ng-template #myModalIg let-modal>
+            <div class="modal-content">
+             <div class="modal-header">
+              <h5 class="modal-title">Nuestra cuenta en Instagram</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="modal.close()">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+             <a href="https://www.instagram.com/dev.shelter" title="Red de Instagram">Siguenos como DevShelter</a>
+             <div class="modal-body">
+               <a> El refugio de tus ideas</a>
+             </div>
+           </div>
+         </div>
+          </ng-template>
+    </div>
+    
+</div>

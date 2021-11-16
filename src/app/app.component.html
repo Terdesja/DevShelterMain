@@ -1,0 +1,74 @@
+<mat-toolbar style="background-color: #1b1b1b;">
+  <img src="assets/iconos/icono1.png" style="height: 64px; width: 185px;">
+  <button mat-button class="toolbarbutton"
+    style="border: 2px solid #ff5000; height: inherit; color: #ffbe01; height: 64px;; width: 100px;"
+    (click)="gotoInicio()">Inicio</button>
+  <div style="display: grid;">
+    <!-- <button mat-button
+      style="border: 2px solid #ff5000;; height: inherit; color: #ffbe01; height: 30px;">Servicios & Proyectos</button> -->
+    <button class="toolbarbutton" (click)="click()" [matMenuTriggerFor]="menu" mat-button
+      style="border: 2px solid #ff5000; height: 64px; color: #ffbe01;">
+      Servicios & Proyectos
+      <mat-menu #menu="matMenu" style="background-color: #1b1b1b;">
+        <button style="color: #ffbe01; background-color: #1b1b1b;" mat-menu-item>Desarrollo Web</button>
+        <button style="color: #ffbe01; background-color: #1b1b1b;" mat-menu-item>Diseño Gráfico</button>
+      </mat-menu>
+    </button>
+
+  </div>
+  <button class="toolbarbutton" mat-button
+    style="border: 2px solid #ff5000; height: inherit; color: #ffbe01; width: 100px; height: 64px;"
+    (click)="gotoBlog()">Blog</button>
+  <button class="toolbarbutton" mat-button
+    style="border: 2px solid #ff5000; height: inherit; color: #ffbe01; height: 64px;"
+    (click)="gotoContactos()">Contacto</button>
+  <button class="toolbarbutton" mat-button
+    style="border: 2px solid #ff5000; height: inherit; color: #ffbe01; height: 64px;"
+    (click)="gotoGallery()">Galeria</button>
+</mat-toolbar>
+<router-outlet></router-outlet>
+
+<!-- Carrusel -->
+<ngb-carousel>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/iconos/logos/logo (1).jpeg" alt="Angular Carousel 1">
+    </div>
+    <div class="carousel-caption">
+      <h3>Title Goes Here</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/iconos/logos/logo (2).jpeg" alt="Angular Carousel 2">
+    </div>
+    <div class="carousel-caption">
+      <h3>Title Goes Here</h3>
+      <p>Consectetur tortor volutpat pretium.</p>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/iconos/logos/logo (3).jpeg" alt="Angular Carousel 1">
+    </div>
+    <div class="carousel-caption">
+      <h3>Title Goes Here</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/iconos/logos/logo (4).jpeg" alt="Angular Carousel 1">
+    </div>
+    <div class="carousel-caption">
+      <h3>Title Goes Here</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<!-- Fin Carrusel -->
+
